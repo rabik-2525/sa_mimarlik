@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.adobe.com/fonts/anth#fonts-section"> 
+    <title>SA MİMARLIK</title>
+</head>
+<body onclick="hizmetleriKapat()">
+    <header>
+        <div class="abcd">
+            <div class="logo">
+                <img src="logo.jpeg" > 
+                <h3><a href="#">MİMARLIK</a></h3>
+            </div>
+            <ul class="sayfalar">
+                <li> <a href="index.html">Anasayfa</a></li>
+                <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+                <li class="Hizmetler-li" onclick="hizmetleriGoster(event)"> <a href="#Hizmetler">Hizmetlerimiz</a>
+                    <div id="Hizmetler-content">
+                        <ul>
+                          <li style="display: block;"> <a href="mimariuygulamaprojeleri.html">MİMARİ UYGULAMA PROJELERİ</a></li>
+                          <li style="display: block;"> <a href="röleve-restorasyon.html">RESTORASYON</a></li>
+                          <li style="display: block;"> <a href="mimarigörselleştirme.html">MİMARİ GÖRSELLEŞTİRME</a></li>
+                          <li style="display: block;"> <a href="mimarianimasyon.html">MİMARİ ANİMASYON</a></li>
+                          <li style="display: block;"> <a href="içmimariuygulamaları.html">İÇ MİMARİ UYGULAMALARI</a></li>              
+                        </ul>
+                        </div>
+                </li>
+                <li> <a href="projeler.html">Projeler</a></li>
+                <li> <a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+      function hizmetleriGoster(event) {
+          event.stopPropagation();  
+        document.getElementById("Hizmetler-content").style.display = "block";
+      }
+      function hizmetleriKapat() {
+        document.getElementById("Hizmetler-content").style.display = "none";
+      }
+  </script>
+
+
+    <div class="resim-row">
+      <div class="resim">
+        <img src="resimler/resim1.jpeg">
+       </div>
+       <div class="resim">
+         <img src="resimler/resim2.jpeg">
+       </div>
+    </div>
+
+    <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim3.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim4.jpeg">
+         </div>
+    </div>
+
+    <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim5.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim6.jpeg">
+         </div>
+      </div>
+
+      <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim7.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim8.jpeg">
+         </div>
+      </div> 
+            
+      <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim9.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim10.jpeg">
+         </div>
+      </div>
+
+      <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim11.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim12.jpeg">
+         </div>
+      </div> 
+
+      <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim13.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim14.jpeg">
+         </div>
+      </div>
+
+      <div class="resim-row">
+        <div class="resim">
+          <img src="resimler/resim15.jpeg">
+         </div>
+         <div class="resim">
+           <img src="resimler/resim16.jpeg">
+         </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.adobe.com/fonts/anth#fonts-section">
+    <title>SA MİMARLIK</title>
+</head>
+<body onclick="hizmetleriKapat()">
+    <header>
+        <div class="abcd">
+            <div class="logo">
+                <img src="logo.jpeg" > 
+                <h3><a href="#"> MİMARLIK</a></h3>
+            </div>
+            <ul class="sayfalar">
+                <li> <a href="index.html">Anasayfa</a></li>
+                <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+                <li class="Hizmetler-li" onclick="hizmetleriGoster(event)"> <a href="#Hizmetler">Hizmetlerimiz</a>
+                    <div id="Hizmetler-content">
+                        <ul>
+                          <li style="display: block;"> <a href="mimariuygulamaprojeleri.html">MİMARİ UYGULAMA PROJELERİ</a></li>
+                          <li style="display: block;"> <a href="röleve-restorasyon.html">RESTORASYON</a></li>
+                          <li style="display: block;"> <a href="mimarigörselleştirme.html">MİMARİ GÖRSELLEŞTİRME</a></li>
+                          <li style="display: block;"> <a href="mimarianimasyon.html">MİMARİ ANİMASYON</a></li>
+                          <li style="display: block;"> <a href="içmimariuygulamaları.html">İÇ MİMARİ UYGULAMALARI</a></li>              
+                        </ul>
+                        </div>
+                </li>
+                <li> <a href="projeler.html">Projeler</a></li>
+                <li> <a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function hizmetleriGoster(event) {
+            event.stopPropagation();  
+          document.getElementById("Hizmetler-content").style.display = "block";
+        }
+        function hizmetleriKapat() {
+          document.getElementById("Hizmetler-content").style.display = "none";
+        }
+    </script>
+
+
+    <style>
+    
+        body{
+            background-image: url(resim.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat; /* resim küçükse ekranda tekrarlamasın diye*/
+        }
+       
+        h2{
+            font-size: 30px;
+            margin-top: 300px;
+            margin-left: 700px;
+            padding-bottom: 30px;}
+    
+        p{
+            background-image: none;
+            font-size: 23px;
+            padding-top: 40px;
+            padding-left: 550px;
+        }
+    </style>
+
+    <div class="röre">
+    <div class="röre-child">
+    <h2>RESTORASYON</h2> 
+    </div>
+    <p><B>
+        
+      Rölöve, yapıların kent dokusunun ve arkeolojik çalışmalar<br>
+      sonucunda ortaya çıkan kalıntıların yakından belgelenmesi,<br>
+      incelenmesi,mimari açıdan değerlendirmesi ve restorasyon <br>
+      çalışmaların hazırlanabilmesi adına binanın dış ve iç mimarisine;<br>
+      özgün dekorasyonuna ve taşıyıcı sistemlerin yapı malzemelerinin <br>
+      kullanımına dikkat edilerek ölçekli çizimle anlatılmasıdır.<br>
+      Teknik bakımdan mimari bir uygulama olmasının yanı sıra <br>
+      çizim olarak görülen bu uygulamanın genel anlamda,<br>
+      restorasyon çalışmalarında yeri son derece önemlidir.
+         
+
+    </B>
+    </p>
+
+    </div>
+    
+</body>
+</html>

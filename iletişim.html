@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.adobe.com/fonts/anth#fonts-section">
+    <title>SA MİMARLIK</title>
+</head>
+<body onclick="hizmetleriKapat()">
+    <header>
+        <div class="abcd">
+            <div class="logo">
+                <img src="logo.jpeg" > 
+                <h3><a href="#">MİMARLIK</a></h3>
+            </div>
+            <ul class="sayfalar">
+                <li> <a href="index.html">Anasayfa</a></li>
+                <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+                <li class="Hizmetler-li" onclick="hizmetleriGoster(event)"> <a href="#Hizmetler">Hizmetlerimiz</a>
+                    <div id="Hizmetler-content">
+                        <ul>
+                          <li style="display: block;"> <a href="mimariuygulamaprojeleri.html">MİMARİ UYGULAMA PROJELERİ</a></li>
+                          <li style="display: block;"> <a href="röleve-restorasyon.html">RESTORASYON</a></li>
+                          <li style="display: block;"> <a href="mimarigörselleştirme.html">MİMARİ GÖRSELLEŞTİRME</a></li>
+                          <li style="display: block;"> <a href="mimarianimasyon.html">MİMARİ ANİMASYON</a></li>
+                          <li style="display: block;"> <a href="içmimariuygulamaları.html">İÇ MİMARİ UYGULAMALARI</a></li>              
+                        </ul>
+                        </div>
+                </li>
+                <li> <a href="projeler.html">Projeler</a></li>
+                <li> <a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <script>
+        function hizmetleriGoster(event) {
+            event.stopPropagation();  
+          document.getElementById("Hizmetler-content").style.display = "block";
+        }
+        function hizmetleriKapat() {
+          document.getElementById("Hizmetler-content").style.display = "none";
+        }
+    </script>
+
+
+    <div class="iletisim">
+        <div class="iletisim-children">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d752.8607643742739!2d28.83955226966177!3d40.99367481045135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa35f129767ff%3A0x402b6e79288e07a8!2zSMO8cnJpeWV0LCBHw7xuZ8O2cmVuIFNrLiBFTMSwRiBBcHQgTm86MjYsIDM0MTkyIEJhaMOnZWxpZXZsZXIvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1708448890863!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+        <div class="iletisim-child">
+            <form id="iletisim"action="https://formspree.io/f/mwkgbevz" method="POST" >
+                <input  placeholder="İSİM" type="text" name="Ad" id="" required><br>
+                <input  placeholder="E-MAİL" type="email" name="e-mail" id=""required><br>
+                <input  placeholder="TELL" type="text" name="phone" id=""required><br>
+                <textarea placeholder="MESAJ" name="MESSAGE" id="" cols="30" rows="10"required></textarea> <br>
+                <input type="submit" value="GÖNDER">
+            </form> 
+        </div>
+    </div>
+
+    <footer>
+        <div class="inner-footer">
+            <div class="innerfooter-child">
+                <h1>İLETİŞİM</h1>
+                <ul class="bilgiler">
+                   <li><i class="adres">Adres: Hürriyet Mh. Güngören Sok. No:26 / B Behçelievler/İstanbul</i></li> 
+                   <li><i class="phone">Tel: 0533 268 66 25</i></li>
+                   <li><i class="e-mail">E-mail: selimakyol25@gmail.com</i></li>
+                </ul>
+            </div>
+        </div>
+    </footer> 
+      
+</body>
+</html>

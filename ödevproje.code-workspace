@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/projeresimler"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ödevproje"
+	}
+}

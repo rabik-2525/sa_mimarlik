@@ -1,0 +1,518 @@
+html{
+    scroll-behavior: smooth; /* geçişlerin yumuşak olmasını sağlar */
+}
+
+*{
+    padding: 0; /* projenin tamamında varsayılan olarak gelen padding ve margin değerini sıfırladım daha sonra kendim değerlerini belirleyeceğim.*/
+    margin: 0; 
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: anth, sans-serif;
+    font-style: normal;
+    font-weight: 40%; /* 400px di 40 % yaptım */
+}
+
+img{
+    width: 100%;
+}
+
+#Anasayfa{
+    margin-top: auto; /* 120px di 12% yaptım*/
+    margin-bottom: -500%;
+
+    /*position: relative;*/
+}
+
+
+
+/*---------------HEADER--------------*/
+
+header {
+    background: rgb(239, 240, 241);
+
+    border-bottom: 1% solid rgba(77, 76, 76, 0.801); /* 1px di 1% yaptım*/
+    position: fixed;  /*   kaydırma çubuğu ile birlikte header bölümünün de aşağı kaymasını sağlar.  */
+    width: 100%;
+    top: 0;
+    z-index: 5; /*ana sayfada yer alan yazının header üzerine denk gelmemesi için kullandım. */
+    padding-bottom: 12px;
+}
+
+
+.abcd{
+    display: flex; /* h3 etiketi ile ul sıralı listesindeki değerleri birbirinden ayırır yan yana yazar. */
+    justify-content: space-between;/* ayrılan bilgilerin arasında eşit miktarda boşluk olacak şekilde biri sağa biri sola gider. */
+    align-items: center;
+    margin-left: auto;
+    width: 80%;
+    padding: -2% 0%;
+    margin-right: 10% ;
+    margin-left: 10% ;
+}
+.logo img{
+    margin-left: -5%;
+    height: 25%;
+    width: 25%;
+    margin-top: 10%;
+    
+}
+
+.sayfalar{
+    display: flex; /* sıralı listedeki elemanların yan yana sıralanmasını sağlar.*/
+
+}
+
+.sayfalar li a{
+    font-size: 25px;
+    color:black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.sayfalar li a:hover{
+    background: #bcbeca;
+}
+
+.logo h3 a{
+    color:#0c0b0b;
+    font-size: 35px;
+    margin-left: -13%;
+    margin-top: 10%;
+    
+    
+}
+
+/*------ANASAYFA----*/
+
+
+
+.inner_Anasayfa{
+    position: absolute;
+    left: 10%;  /* 30 px di 3% yaptım*/
+    top: 40%; /*300 px di 30% yaptım*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0% auto;
+    width:80%;
+}
+
+.child_Anasayfa{
+    flex-basis: 45%;
+}
+.child_Anasayfa h2{
+    font-size: 230%; /* 50 px di 230% yaptım*/
+    
+}
+.child_Anasayfa span{
+    font-size: 210%;/* 35px di 210% yaptım*/
+
+}
+.child_Anasayfa p{
+    font-size: 200%;/* 30px di 200% yaptım*/
+}
+
+/*-------HİZMETLER MENÜ--------*/
+
+#Hizmetler-content {
+    position: absolute; /*akıştan bağımsız bir hale getirmek için.*/
+    z-index:1;
+    display: none;
+    margin-top: 54px;
+    margin-left:-10px;
+    border-radius: 8px;
+    padding: 12px 0;
+}
+#Hizmetler-content li{
+    padding: 10px 10px;
+}
+#Hizmetler-content {
+    background-color: rgb(239, 240, 241);
+    font-size: medium;
+}
+.Hizmetler-li:hover #Hizmetler-content{
+    display: block;
+}
+
+/*---PROJELER-----*/
+.salogo{
+    padding-top: 10px;
+    margin-top: -700px;
+    margin-left: 1100px;
+    margin-right: 100px;
+    width: 300px;
+}
+
+.resim-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 32px;
+}
+.resim {
+    width: 45%;
+}
+
+/*----İLETİŞİM-----*/
+
+.iletisim{
+    display : flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+    width: 80%;
+
+}
+.iletisim-child{
+    flex-basis: 45%;
+    margin-top: -610px;
+}
+.iletisim-child form{
+    padding-top :100px;
+    padding-bottom: 45px;
+    padding-right: 100px;
+    margin-right: 150px;
+    margin-left: 1100px;
+    margin-top: 150px;
+    background: rgb(239, 240, 241);
+    border-radius: 5px;
+}
+
+.iletisim-child form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-top: -15px;
+    background: rgb(251, 251, 252);
+    border: none;
+    resize:none;
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+
+}
+.iletisim-child form input,textarea:focus{
+    color: #000000;
+}
+
+.iletisim-child form input:focus{ /* inputların üzerine tıklandığında var sayılan değerin harfleri arasında 2px lik boşluk bırakır */
+    letter-spacing: 2px;
+}
+
+.iletisim-child form textarea:focus{
+    letter-spacing: 2px;
+}
+
+.iletisim-child form input:last-child{
+
+    background: #d7e2f3;
+    border: 2px solid #d7e2f3;
+    transition: .3s;
+}
+
+.iletisim-child form input:last-child:hover{
+    background: transparent;
+    color: #000000;
+}
+.iletisim-children iframe{
+    margin-top: 220px;
+    margin-left: 35px;
+}
+
+footer{
+    background: #d7e2f3;
+    margin-top: 3px;
+    margin-bottom: 94px;
+    color: #080808;
+    padding-bottom: 100px;
+}
+.innerfooter-child h1{
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.innerfooter-child ul li{
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: 20px;
+    
+    
+}
+
+/*-------------Mobil cihazlar için olan stiller---------------*/
+
+@media screen and (width<=600px){
+    /*-----ANASAYFA-----*/
+
+    html{
+        scroll-behavior: smooth; /* geçişlerin yumuşak olmasını sağlar */
+    }
+    
+    *{
+        padding: 0; /* projenin tamamında varsayılan olarak gelen padding ve margin değerini sıfırladım daha sonra kendim değerlerini belirleyeceğim.*/
+        margin: 0; 
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: anth, sans-serif;
+        font-style: normal;
+        font-weight: 40%; /* 400px di 40 % yaptım */
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    #Anasayfa{
+        margin-top: auto; /* 120px di 12% yaptım*/
+        margin-bottom: -500%;
+    
+        /*position: relative;*/
+    }
+    
+    header {
+        background: rgb(239, 240, 241);
+    
+        border-bottom: 1% solid rgba(77, 76, 76, 0.801); /* 1px di 1% yaptım*/
+        position: fixed;  /*   kaydırma çubuğu ile birlikte header bölümünün de aşağı kaymasını sağlar.  */
+        width: 100%;
+        top: 0;
+        z-index: 5; /*ana sayfada yer alan yazının header üzerine denk gelmemesi için kullandım. */
+        height: 100px;
+    }
+    .abcd{
+        height:40px;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+    .logo img{
+        margin-top: 15px;
+        
+    }
+
+    .logo h3 a{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .sayfalar li a{
+        font-size: 15px;
+        margin-left: -25px;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .sayfalar li a:hover{
+        background: #bcbeca;
+    }
+    .sayfalar{
+    margin-top: 100px;
+    margin-left:-100px;
+    
+    
+    }
+    .child_Anasayfa h2{
+        font-size: 20px; /* 50 px di 230% yaptım*/
+        
+    }
+    .child_Anasayfa span{
+        font-size: 18px;/* 35px di 210% yaptım*/
+    
+    }
+    .child_Anasayfa p{
+        font-size: 22px;/* 30px di 200% yaptım*/
+    }
+    .inner_Anasayfa{
+        margin-top: -78px;
+    }
+
+     /*-----HAKKIMIZDA-------*/
+     .hak{
+        width: 400px;
+        align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+
+     }
+     .hak-child h2{
+       margin-top: 150px;
+       margin-left: 100px;
+       font-size: 23px;
+
+     }
+     /*------HİZMETLERİMİZ-------*/
+
+     #Hizmetler-content {
+        position: absolute; 
+        z-index:1;
+        display: none;
+        margin-top: 16px;
+        margin-left:-10px;
+        width: 500px;
+    
+    }
+    #Hizmetler-content li{
+        padding: 10px 10px;
+    }
+    .Hizmetler-li:hover #Hizmetler-content{
+        display: block;
+    }
+
+    /*-----PROJELER-----*/
+    .salogo{
+        padding-top: 10px;
+        margin-top: -700px;
+        margin-left: 1100px;
+        margin-right: 100px;
+        width: 300px;
+}
+
+.resim-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .resim {
+      width: 90%;
+  }
+
+ /*------İLETİŞİM------*/
+
+ .iletisim-children iframe{
+    width: 300px;
+    height: 300px;
+    margin-left:30px;
+    padding-left:30px;
+    margin-top:150px;
+    margin-bottom:650px;
+ }
+ .iletisim-child form{
+    width:400px;
+    height:500px;
+    margin-left:10px;
+    margin-top:-150px;
+    padding-top:10px;
+ }
+ .iletisim{
+    display:block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top:10px;
+
+}
+.inner-footer{
+    height:200px;
+}
+.innerfooter-child h1 {
+    margin-bottom:-45px;
+    font-size:15px ;
+    margin-left:160px;
+    
+}
+.innerfooter-child ul li i{
+    font-size:15px;
+    margin-left:-150px;
+    margin-top:15px;
+
+}
+.hak{
+    width: 400px;
+    align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+ }
+ .mup p{
+    width: 400px;
+    margin-left: -350px;
+    margin-right: 10px;
+    font-size:25;
+    padding-top:50px;
+
+ }
+ .mup-child h2{
+   margin-top: 150px;
+   margin-left: 40px;
+   font-size: 20px;
+
+
+}
+.röre p{
+    width: 400px;
+    margin-left: -400px;
+    margin-right: 10px;
+    font-size:25;
+    padding-top:50px;
+
+ }
+ .röre-child h2{
+   margin-top: 150px;
+   margin-left: 130px;
+   font-size: 20px;
+
+
+}
+.migör p{
+    width: 400px;
+    margin-left:-350px;
+    margin-right: 10px;
+    font-size:25;
+    padding-top:50px;
+
+ }
+ .migör-child h2{
+   margin-top: 150px;
+   margin-left:90px;
+   font-size: 20px;
+
+
+}
+.mian p{
+    width: 400px;
+    margin-left:-450px;
+    margin-right: 10px;
+    font-size:25;
+    padding-top:50px;
+
+ }
+ .mian-child h2{
+   margin-top: 150px;
+   margin-left:90px;
+   font-size: 20px;
+
+
+}
+.miuy p{
+    width: 400px;
+    margin-left:-350px;
+    margin-right: 10px;
+    font-size:25;
+    padding-top:50px;
+
+ }
+ .miuy-child h2{
+   margin-top: 150px;
+   margin-left:90px;
+   font-size: 20px;
+
+
+}
+
+
+}
+
+    
+
+

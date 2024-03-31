@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.adobe.com/fonts/anth#fonts-section">
+    <title>SA MİMARLIK</title>
+</head>
+<body onclick="hizmetleriKapat()">
+
+    <header>
+        <div class="abcd">
+            <div class="logo">
+                <img src="logo.jpeg" > 
+                <h3><a href="#">MİMARLIK</a></h3>
+            </div>
+            <ul class="sayfalar">
+                <li> <a href="index.html">Anasayfa</a></li>
+                <li> <a href="hakkımızda.html">Hakkımızda</a></li>
+                <li class="Hizmetler-li" onclick="hizmetleriGoster(event)"> <a href="#Hizmetler">Hizmetlerimiz</a>
+                    <div id="Hizmetler-content">
+                        <ul>
+                          <li style="display: block;"> <a href="mimariuygulamaprojeleri.html">MİMARİ UYGULAMA PROJELERİ</a></li>
+                          <li style="display: block;"> <a href="röleve-restorasyon.html">RESTORASYON</a></li>
+                          <li style="display: block;"> <a href="mimarigörselleştirme.html">MİMARİ GÖRSELLEŞTİRME</a></li>
+                          <li style="display: block;"> <a href="mimarianimasyon.html">MİMARİ ANİMASYON</a></li>
+                          <li style="display: block;"> <a href="içmimariuygulamaları.html">İÇ MİMARİ UYGULAMALARI</a></li>              
+                        </ul>
+                        </div>
+                </li>
+                <li> <a href="projeler.html">Projeler</a></li>
+                <li> <a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        function hizmetleriGoster(event) {
+            event.stopPropagation();  
+          document.getElementById("Hizmetler-content").style.display = "block";
+        }
+        function hizmetleriKapat() {
+          document.getElementById("Hizmetler-content").style.display = "none";
+        }
+    </script>
+
+    <style>
+    
+        body{
+            background-image: url(resim.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat; /* resim küçükse ekranda tekrarlamasın diye*/
+        }
+        
+        h2{
+            margin-top: 250px;
+            margin-left: 700px;
+            font-size: 230x;
+        }
+        p{
+            background-image: none;
+            font-size: 23px;
+            padding-top: 50px;
+            padding-left: 480px;
+            }
+    </style>
+
+    <div class="migör">
+        <div class="migör-child">
+            <h2>MİMARİ GÖRSELLEŞTİRME</h2>
+        </div>
+    
+
+    <p><B>
+        Mimari görselleştirme; bir projenin bilgisayar ortamında 3D (3 boyutlu)<br>
+        çizilmesi ve elde edilen grafik tasarımın,gerçeğine uygun olarak modellenen<br>
+        nesne üzerinde uygun kamera ve ışık ayarları yapılarak fotoğraf vevideolarının<br>
+        oluşturulmasıdır.<br><br>
+
+
+        3D mimari görselleştirme, animasyon ve modelleme ile  amaç hayalinizdeki<br>
+        tasarımı en gerçekçi haliyle size sunmaktır. Yapımı uzun süren çalışmalarda<br>
+        görselleştirme sıklıkla kullanılır. Yapı işlemlerine başlamadannasıl bir sonuç<br>
+        ortaya çıkacağını görmemizi sağlar.<br><br>
+
+        Bu yöntem sayesinde mimar ve tasarımcıların doğru, güzel ve yüksek kaliteli<br>
+        mimari tasarımlar geliştirmelerine yardımcı olur,  tasarlanan yapının tamamlandığında<br>
+        nasıl görüneceği konusunda net fikir sağlar, firmalar mimari projelerini yapım <br>
+        aşamasına geçmeden önce sunmak ve tanıtmak için gerçekçi görsel ve animasyonlara <br>
+        sahip olurlar.
+        </B>
+    </p>
+</div>
+</body>
+</html>
