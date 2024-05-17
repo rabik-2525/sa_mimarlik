@@ -248,7 +248,7 @@ footer{
 
 /*-------------Mobil cihazlar için olan stiller---------------*/
 
-@media screen and (width<=600px){
+@media screen and (width<=400px){
     /*-----ANASAYFA-----*/
 
     html{
@@ -337,7 +337,7 @@ footer{
 
      /*-----HAKKIMIZDA-------*/
      .hak{
-        width: 400px;
+        width: 90%;
         align: center;
         margin-left: 10px;
         margin-right: 10px;
@@ -435,11 +435,10 @@ footer{
 
  }
  .mup p{
-    width: 400px;
-    margin-left: -350px;
-    margin-right: 10px;
+    width: 90%;
+    margin-left: 1%;
     font-size:25;
-    padding-top:50px;
+    padding-top:40px;
 
  }
  .mup-child h2{
@@ -450,11 +449,10 @@ footer{
 
 }
 .röre p{
-    width: 400px;
-    margin-left: -400px;
-    margin-right: 10px;
-    font-size:25;
-    padding-top:50px;
+    width: 90%;
+    padding-right: 6%;
+    font-size:20px;
+    padding-top:15px;
 
  }
  .röre-child h2{
@@ -465,11 +463,11 @@ footer{
 
 }
 .migör p{
-    width: 400px;
-    margin-left:-350px;
-    margin-right: 10px;
+    width: 90%;
+    padding-right: 7%;
+    margin: 5%;
     font-size:25;
-    padding-top:50px;
+    padding-top:40px;
 
  }
  .migör-child h2{
@@ -480,11 +478,9 @@ footer{
 
 }
 .mian p{
-    width: 400px;
-    margin-left:-450px;
-    margin-right: 10px;
-    font-size:25;
-    padding-top:50px;
+    width: 90%;
+    font-size:20;
+    padding-top:40px;
 
  }
  .mian-child h2{
@@ -495,11 +491,9 @@ footer{
 
 }
 .miuy p{
-    width: 400px;
-    margin-left:-350px;
-    margin-right: 10px;
+    width: 90%;
     font-size:25;
-    padding-top:50px;
+    padding-top:40px;
 
  }
  .miuy-child h2{
